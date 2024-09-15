@@ -1,0 +1,12 @@
+['handcuffs'] = {
+    label = 'Handcuffs',
+    weight = 100,
+    type = 'item',
+    client = {
+        usetime = 2500,
+        use = function()
+            local playerId = GetPlayerServerId(PlayerId())
+            TriggerClientEvent('ak47_crime:cuff:hard', playerId)
+        end
+    }
+},
